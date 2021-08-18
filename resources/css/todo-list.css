@@ -1,0 +1,131 @@
+@charset "UTF-8";
+html,body{
+	height: 100%;
+}
+
+body{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.location{
+	height: 10%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.txt_location{
+	font-size: 2vw;
+	padding-right: 20px;
+	color: gray;
+}
+
+.main{
+	height: 80%;
+	display: flex;
+	/* justify-content: space-between; */
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap_todo{
+	width: 40vw;
+	height: 20vw;
+	background-color: rgba(0,0,0,0.3);
+	/* margin-right: 20vw; */
+}
+
+.wrap_clock{
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+
+.wrap_clock>div{
+	font-size: 2vw;
+	font-weight: bolder;
+	color: white;
+	line-height: 2;
+	
+}
+
+.wrap_username{
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap_username>form{
+	width: 100%;
+}
+
+.inp_username{
+	position: relative;
+	left: 10%;
+	width: 80%;
+	hegith: 30%;
+	color: white;
+	font-size: 3vw;
+	text-align: center;
+	background-color: transparent;
+	border-radius: 30%;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-color: white;
+	padding: 1vw;
+	outline: none; /* 포커스 시에 테두리가 표시되는 속성 */
+}
+
+.inp_username::placeholder{
+	color: white;
+	font-size: 3vw;
+	text-align: center;
+}
+
+.todo-list{
+	display: none;
+	background-color: rgba(0,0,0,0.3);
+	height: 100vh;
+	width: 20vw;
+	min-width: 170px;
+}
+
+.todo-list>p{
+	color: white;
+	font-size: 2vw;
+	font-weight: bolder;
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+
+.todo-list>div{
+	position: relative;
+	display: inline-block;
+	width: 80%;
+	left: 10%;
+	background-color: red;
+	color: white;
+	text-align: center;
+	font-size: 1.5vw;
+	padding: 5px 0 5px 0;
+	margin: 10px 0 10px 0;
+	overflow: visible;
+}
+
+.bg-info{
+	height: 10%;
+	display: flex;
+	align-items: center;
+}
+
+.txt_bg{
+	font-size: 2vw;
+	padding-left: 20px;
+	color: gray;
+}
